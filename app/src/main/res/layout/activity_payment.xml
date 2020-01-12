@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/grad_bg"
-    tools:context=".activity.InitialActivity">
+    android:background="@color/white"
+    tools:context=".activity.PaymentActivity">
 
     <RelativeLayout
         android:id="@+id/brochure1_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="60dp">
+        android:layout_marginTop="50dp">
 
         <ImageView
             android:id="@+id/icon"
-            android:layout_width="45dp"
-            android:layout_height="55dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/sweet" />
+            android:background="@drawable/payment" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -27,9 +27,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
             android:padding="10dp"
-            android:text="SMOOTHIES TO DOOR"
-            android:textColor="@color/textBlue"
-            android:textSize="18sp"
+            android:text="PAYMENT"
+            android:textColor="@color/bluegrey"
+            android:textSize="22sp"
             android:textStyle="bold"
             android:typeface="serif" />
     </RelativeLayout>
@@ -37,31 +37,36 @@
     <RelativeLayout
         android:id="@+id/phoneNumber"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_centerInParent="true"
-        android:layout_margin="20dp"
-        android:background="@drawable/underline">
+        android:layout_height="wrap_content"
+        android:layout_above="@id/signinButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp">
 
-        <EditText
+        <TextView
             android:id="@+id/phone"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentEnd="true"
-            android:layout_toEndOf="@+id/view_phone"
-            android:background="@drawable/transparent"
-            android:hint="Phone number"
-            android:imeOptions="flagNoExtractUi"
-            android:inputType="phone"
-            android:textColor="@color/white"
-            android:textColorHint="@color/hintBlue" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="amount is"
+            android:padding="4dp"
+            android:textAllCaps="true"
+            android:textSize="17sp"
+            android:textColor="@color/buttonBlue" />
 
-        <ImageView
-            android:id="@+id/view_phone"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_alignParentStart="true"
-            android:padding="12dp"
-            android:src="@drawable/phone" />
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:padding="4dp"
+            android:text="$499"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textAllCaps="true"
+            android:typeface="serif"
+            android:textColor="@color/black" />
 
     </RelativeLayout>
 
@@ -72,16 +77,16 @@
         android:layout_above="@id/faketext"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/button_bg"
-        android:onClick="otpMethod"
-        android:text="Sign In"
+        android:background="@drawable/blueberry_bg"
+        android:textSize="20sp"
+        android:text="PROCEED TO PAY"
         android:textColor="@color/buttontextBlue"
         android:typeface="serif" />
 
     <TextView
         android:id="@+id/faketext"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="5dp"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"

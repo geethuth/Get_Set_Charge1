@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Get Set Charge</string>
     <string name="my_text"><u>I Agree</u>.</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_order">Orders</string>
+    <string name="title_support">Support</string>
+    <string name="title_myaccount">My Account</string>
 </resources>

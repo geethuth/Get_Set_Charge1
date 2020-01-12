@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.getsetcharge1.fragment.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_order"
+        android:name="com.example.getsetcharge1.fragment.OrderFragment"
+        android:label="@string/title_order"
+        tools:layout="@layout/fragment_order" />
+
+    <fragment
+        android:id="@+id/navigation_support"
+        android:name="com.example.getsetcharge1.fragment.SupportFragment"
+        android:label="@string/title_support"
+        tools:layout="@layout/fragment_support" />
+    <fragment
+        android:id="@+id/navigation_myaccount"
+        android:name="com.example.getsetcharge1.fragment.SupportFragment"
+        android:label="@string/title_myaccount"
+        tools:layout="@layout/fragment_support" />
+</navigation>

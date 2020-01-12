@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InitialActivity">
+        <activity android:name=".activity.StationActivity"></activity>
+        <activity android:name=".activity.MyorderActivity" />
+        <activity android:name=".activity.PaymentActivity" />
+        <activity android:name=".activity.RentActivity" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:label="@string/title_activity_home" />
+        <activity android:name=".activity.otpVerificationActivity" />
+        <activity android:name=".activity.InitialActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimary">#036a89</color>
     <color name="colorPrimaryDark">#4dd0e2</color>
     <color name="colorAccent">#D81B60</color>
     <color name="bluegrey">#036a89</color>
     <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
     <color name="transparent">#00FFFFFF</color>
     <color name="gradStart">#07b6c9</color>
     <color name="textBlue">#c5ffff</color>
     <color name="buttontextBlue">#b9ffff</color>
     <color name="buttonBlue">#4dd0e2</color>
     <color name="hintBlue">#5fbfcd</color>
-
-
+    <color name="textGrey">#aeb6b9</color>
+    <color name="bgGrey">#f8f8f8</color>
     //ccedf2
 </resources>

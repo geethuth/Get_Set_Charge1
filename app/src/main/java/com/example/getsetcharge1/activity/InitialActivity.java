@@ -1,5 +1,6 @@
-package com.example.getsetcharge1;
+package com.example.getsetcharge1.activity;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +9,8 @@ import android.widget.ViewFlipper;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+
+import com.example.getsetcharge1.R;
 
 public class InitialActivity extends AppCompatActivity {
 
@@ -54,8 +57,9 @@ public class InitialActivity extends AppCompatActivity {
         signup.setTypeface(Typeface.create("serif", Typeface.BOLD));
     }
 
-    public void homeMethod(View view) {
-
+    public void otpMethod(View view) {
+        Intent intent = new Intent(this, otpVerificationActivity.class);
+        startActivity(intent);
     }
 
     public void signupSubmit(View view) {
@@ -70,5 +74,6 @@ public class InitialActivity extends AppCompatActivity {
         signup.setBackground(
                 ContextCompat.getDrawable(this,
                         R.drawable.blueberry_bg));
-        signup.setTypeface(Typeface.create("serif", Typeface.NORMAL));    }
+        signup.setTypeface(Typeface.create("serif", Typeface.NORMAL));
+    }
 }
