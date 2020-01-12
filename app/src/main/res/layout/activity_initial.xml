@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InitialActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#21a2b5">
+
+        <Space
+            android:id="@+id/fakeView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_toStartOf="@+id/fakeView"
+            android:background="@drawable/white_bg"
+            android:text="Login"
+            android:onClick="login"
+            android:textColor="@color/bluegrey" />
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@+id/fakeView"
+            android:background="@drawable/blueberry_bg"
+            android:text="Sign Up"
+            android:onClick="signup"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ViewFlipper
+        android:id="@+id/ViewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout1">
+
+        <include
+            layout="@layout/startscreen1layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            layout="@layout/startscreen2layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </ViewFlipper>
+</RelativeLayout>

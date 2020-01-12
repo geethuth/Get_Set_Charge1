@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/grad_bg"
+    tools:context=".InitialActivity">
+
+    <RelativeLayout
+        android:id="@+id/brochure1_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/sweet" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:text="SMOOTHIES TO DOOR"
+            android:textColor="@color/textBlue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/underline">
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/view_phone"
+            android:background="@drawable/transparent"
+            android:hint="User Name"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="phone"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hintBlue" />
+
+        <ImageView
+            android:id="@+id/view_phone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:padding="12dp"
+            android:src="@drawable/phone" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/signinButton"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@id/faketext"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_bg"
+        android:onClick="homeMethod"
+        android:text="Sign In"
+        android:textColor="@color/buttontextBlue"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/faketext"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:text="" />
+</RelativeLayout>

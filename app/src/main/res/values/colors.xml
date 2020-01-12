@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#4dd0e2</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="bluegrey">#036a89</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="gradStart">#07b6c9</color>
+    <color name="textBlue">#c5ffff</color>
+    <color name="buttontextBlue">#b9ffff</color>
+    <color name="buttonBlue">#4dd0e2</color>
+    <color name="hintBlue">#5fbfcd</color>
+
+
+    //ccedf2
+</resources>
