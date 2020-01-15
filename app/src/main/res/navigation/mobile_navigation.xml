@@ -21,10 +21,10 @@
         android:id="@+id/navigation_support"
         android:name="com.example.getsetcharge1.fragment.SupportFragment"
         android:label="@string/title_support"
-        tools:layout="@layout/fragment_support" />
+        tools:layout="@layout/activity_pickup" />
     <fragment
         android:id="@+id/navigation_myaccount"
         android:name="com.example.getsetcharge1.fragment.SupportFragment"
         android:label="@string/title_myaccount"
-        tools:layout="@layout/fragment_support" />
+        tools:layout="@layout/activity_pickup" />
 </navigation>

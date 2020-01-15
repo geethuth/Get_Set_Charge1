@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.PaymentActivity">
+
+    <RelativeLayout
+        android:id="@+id/brochure1_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="#449dbb">
+
+        <TextView
+            android:id="@+id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Please select a station for \npickup"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/brochure1_image"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/speed1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                android:background="@drawable/whitebox_border"
+                android:gravity="center"
+                android:text="2 \nkm"
+                android:textColor="#6b7fb4"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@+id/speed1"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Station Name [Station No]"
+                    android:textColor="#7a7a7a"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/place1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/place"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Place"
+                    android:textColor="#7a7a7a"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/readmore1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/place1"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Read more"
+                    android:textColor="#9aa3cc"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/phoneNumber2"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phoneNumber"
+            android:layout_centerHorizontal="true"
+            android:background="#edf1fd">
+
+            <TextView
+                android:id="@+id/speed2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                android:background="@drawable/whitebox_border"
+                android:gravity="center"
+                android:text="4 \nkm"
+                android:textColor="#6b7fb4"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@+id/speed2"
+                android:background="#edf1fd"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/place6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Station Name [Station No]"
+                    android:textColor="#7a7a7a"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/place7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/place6"
+                    android:layout_alignParentStart="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Place"
+                    android:textColor="#7a7a7a"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/readmore2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/place7"
+                    android:layout_alignParentStart="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Read more"
+                    android:textColor="#9aa3cc"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/phoneNumber3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phoneNumber2"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/speed3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                android:background="@drawable/whitebox_border"
+                android:gravity="center"
+                android:text="5 \nkm"
+                android:textColor="#6b7fb4"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@+id/speed3"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/place4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Station Name [Station No]"
+                    android:textColor="#7a7a7a"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/place5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/place4"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Place"
+                    android:textColor="#7a7a7a"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/readmore3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/place5"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Read more"
+                    android:textColor="#9aa3cc"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/phoneNumber4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phoneNumber3"
+            android:layout_centerHorizontal="true"
+            android:background="#edf1fd">
+
+            <TextView
+                android:id="@+id/speed4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                android:background="@drawable/whitebox_border"
+                android:gravity="center"
+                android:text="6.5 \nkm"
+                android:textColor="#6b7fb4"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@+id/speed4"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/place2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Station Name [Station No]"
+                    android:textColor="#7a7a7a"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/place3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/place2"
+                    android:layout_alignParentStart="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Place"
+                    android:textColor="#7a7a7a"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/readmore4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/place3"
+                    android:layout_alignParentStart="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Read more"
+                    android:textColor="#9aa3cc"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/navigateButton"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/lay1"
+        android:background="@drawable/bluecurved_bg"
+        android:text="Show more stations"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/signinButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_above="@id/faketext"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/blueberry_bg"
+        android:text="View Map"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/faketext"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="20dp"
+        android:text="" />
+</RelativeLayout>
+
+
+    <!--#edf1fd-->

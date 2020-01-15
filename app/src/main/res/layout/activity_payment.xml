@@ -79,6 +79,7 @@
         android:layout_marginEnd="20dp"
         android:background="@drawable/blueberry_bg"
         android:textSize="20sp"
+        android:onClick="pickupstation"
         android:text="PROCEED TO PAY"
         android:textColor="@color/buttontextBlue"
         android:typeface="serif" />
